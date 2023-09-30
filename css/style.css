@@ -1,0 +1,70 @@
+/* 
+achtergrond rood #BC1314
+achtergrond zwart #100B09
+wit #FFFFFF
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&display=swap');
+
+*   {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: #100B09;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+nav {
+    border-bottom: 2px solid #FFFFFF;
+    background-color: #100B09;
+    display: flex;
+    padding: 4vh;
+    justify-content:space-around;
+    gap: 60vw;
+    
+}
+
+.logo {
+     width: 160px;
+     padding: 0%;
+     border-radius: 5px;
+     border: 1px solid #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    background-color: #100B09;
+    color: #bc1314;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+a:hover {
+    color: #FFFFFF;
+    background-color: #bc1314;
+}
+
+.inverseLink {
+    background-color: #bc1314;
+    color: #FFFFFF;
+}
+
+.inverseLink:hover {
+    background-color: #FFFFFF;
+    color: #bc1314;
+}
+
+header {
+    background-image: url(../images/cover.jpg);
+    border-bottom: 2px solid #FFFFFF;
+    padding: 18%;
+    
+}
