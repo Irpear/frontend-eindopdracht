@@ -6,7 +6,7 @@ wit #FFFFFF
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&display=swap');
 
-*   {
+* {
     box-sizing: border-box;
 }
 
@@ -27,16 +27,19 @@ nav {
     background-color: #100B09;
     display: flex;
     padding: 4vh;
-    justify-content:space-around;
+    justify-content: space-around;
     gap: 60vw;
-    
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /*transform: scale(1.5) rotate(90deg);*/
 }
 
 .logo {
-     width: 160px;
-     padding: 0%;
-     border-radius: 5px;
-     border: 1px solid #FFFFFF;
+    width: 160px;
+    padding: 0%;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
 }
 
 a {
@@ -45,11 +48,13 @@ a {
     color: #bc1314;
     padding: 10px 25px;
     border-radius: 5px;
+    transition: all 0.75s ease;
 }
 
 a:hover {
     color: #FFFFFF;
     background-color: #bc1314;
+    transition: none;
 }
 
 .inverseLink {
@@ -63,8 +68,49 @@ a:hover {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
     background-image: url(../images/cover.jpg);
     border-bottom: 2px solid #FFFFFF;
-    padding: 18%;
-    
+    padding: 15%;
+    text-align: center;
+    align-items: center;
+}
+
+header p {
+    background-color: rgba(16, 11, 9, 0.7);
+    border-radius: 20px;
+    width: 45vw;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0%;
+}
+
+.whiteLink {
+    color: #FFFFFF;
+    border: #FFFFFF 2px solid;
+}
+
+.whiteLink:hover {
+    transition: all 2.5s;
+    color: #100B09;
+    border: #100B09 2px solid;
+    background-color: #FFFFFF;
+    box-shadow: inset 0px 0px 0px 200px rgba(255, 255, 255, 1);
+}
+
+.blackLink {
+    color: #100B09;
+    background-color: #FFFFFF;
+    border: #100B09 2px solid;
+}
+
+.blackLink:hover {
+    transition: all 2.5s;
+    background-color: #100B09;
+    border: #FFFFFF 2px solid;
+    box-shadow: inset 0px 0px 0px 200px rgba(16, 11, 9, 1);
 }
