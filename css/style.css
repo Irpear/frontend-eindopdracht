@@ -16,8 +16,8 @@ html {
 }
 
 body {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     background-color: #100B09;
     font-family: 'Source Sans 3', sans-serif;
 }
@@ -27,17 +27,22 @@ nav {
     background-color: #100B09;
     display: flex;
     padding: 4vh;
-    justify-content: space-around;
-    gap: 60vw;
+    gap: 45vw;
     position: sticky;
     top: 0;
     z-index: 1;
-    /*transform: scale(1.5) rotate(90deg);*/
 }
 
+.links {
+    display: flex;
+    font-size: 0.6rem;
+    gap: 0.3vw;
+}
+
+
 .logo {
-    width: 160px;
-    padding: 0%;
+    width: 15vw;
+    padding: 0;
     border-radius: 5px;
     border: 1px solid #FFFFFF;
 }
@@ -46,7 +51,7 @@ a {
     text-decoration: none;
     background-color: #100B09;
     color: #bc1314;
-    padding: 10px 25px;
+    padding: 5% 12%;
     border-radius: 5px;
     transition: all 0.75s ease;
 }
@@ -70,10 +75,9 @@ a:hover {
 header {
     display: flex;
     flex-direction: column;
-    gap: 50px;
     background-image: url(../images/cover.jpg);
     border-bottom: 2px solid #FFFFFF;
-    padding: 15%;
+    padding: 15vw;
     text-align: center;
     align-items: center;
 }
@@ -82,16 +86,37 @@ header p {
     background-color: rgba(16, 11, 9, 0.7);
     border-radius: 20px;
     width: 45vw;
+    font-size: 0.8rem;
 }
 
 h1 {
     font-size: 3rem;
-    margin-bottom: 0%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 15vh;
+}
+
+h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.headerlinks {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 5vh;
 }
 
 .whiteLink {
     color: #FFFFFF;
     border: #FFFFFF 2px solid;
+    padding: 8% 15%;
 }
 
 .whiteLink:hover {
@@ -106,6 +131,7 @@ h1 {
     color: #100B09;
     background-color: #FFFFFF;
     border: #100B09 2px solid;
+    padding: 8% 15%;
 }
 
 .blackLink:hover {
@@ -113,4 +139,148 @@ h1 {
     background-color: #100B09;
     border: #FFFFFF 2px solid;
     box-shadow: inset 0px 0px 0px 200px rgba(16, 11, 9, 1);
+}
+
+.three-articles {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+
+article {
+    width: 25vw;
+    height: 70vh;
+    border: #FFFFFF 2px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15vh;
+}
+
+article img {
+    width: 100%;
+    height: 45%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    object-fit: cover;
+    border-bottom: #FFFFFF solid 2px;
+}
+
+article p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+article a {
+    font-size: 0.6rem;
+    padding: 2% 6%;
+}
+
+.stars {
+    display: flex;
+}
+
+.stars img {
+    width: 8%;
+    height: auto;
+    margin: 0;
+    border: none;
+}
+
+.marginbox {
+    margin: 6%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: flex-start;
+}
+
+#formtitle {
+    padding-top: 8vh;
+    margin-bottom: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 43vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.6rem;
+    gap: 1.5vh;
+}
+
+.red {
+    background-color: #bc1314;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0.75vh;
+}
+
+.doubleinput {
+    display: flex;
+    gap: 1vw;
+}
+
+select,
+input {
+    padding: 1.5vh;
+    border-radius: 5px;
+    border: none;
+}
+
+#radio {
+    display: flex;
+    gap: 1vw;
+    margin-bottom: 2vh;
+}
+
+button {
+    text-decoration: none;
+    background-color: #100B09;
+    color: #bc1314;
+    padding: 2.5vh 0;
+    border-radius: 5px;
+    transition: all 0.75s ease;
+    color: #FFFFFF;
+    margin: 2vh 0 15vh 0;
+}
+
+footer a {
+    font-size: 0.5rem;
+    color: rgb(141, 141, 141);
+    padding: 0 1vw;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.5rem;
+}
+
+footer {
+    display: flex;
+    margin: 5vw;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.minilogo {
+    width: 2vw;
+}
+
+.footerlinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+input:invalid {
+    border: #ff0000 solid 2px;
+}
+
+input:valid {
+    border: rgb(7, 165, 7) solid 2px;
 }
